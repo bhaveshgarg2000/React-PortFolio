@@ -5,7 +5,7 @@ const Footer = () => {
     const shouldOpenInNewTab = true;
 
     return (
-        <div className="mt-20 pt-2 bg-white ">
+        <div className="mt-10 pt-2 bg-white ">
             <div className="footer text-center text-dark p">
                 <div className="icons">
                     <a

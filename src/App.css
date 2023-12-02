@@ -7,37 +7,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  /* font-style: italic; */
 }
 .foro {
   font-size: 2rem;
 }
-/* .brand1{
-
-  background:" linear-gradient(to right, #fdfbfb, #ebedee 70%)";
-  color:" #0f52ba"
-  font-weight: "400";
-  font-size: "40px";
-  filter: contrast(118%);
-  opacity: .8;
-  transition: opacity 1s ease 0s;
-  background: radial-gradient(#30ade1 0%, #791547 100%)
-  -webkit-background-clip: text
-  -webkit-text-fill-color: transparent
-  font:
-    font-size: 15vw
-    font-family: "Poppins", sans-serif
-    text-shadow: 3px 3px 1px rgba(121,175,206,0.44), 7px 6px 1px rgba(121,175,206,0.44)
-  }
-  
-
-.brand1:hover{
-
-  color: white
-  // text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6)
-  opacity: 0.6
-} */
-
-/* .hello {
-  text-shadow: 0 1;
-} */
