@@ -22,10 +22,10 @@ const NavBar = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar> */}
-            <Navbar expand="lg" className="bg-dark">
+            <Navbar expand="lg" className="">
                 <Container>
                     {/* <Navbar.Brand className="flex md:text-lg md:decoration-solid md:text-dark md:font-italic" href="/">Bhavesh Garg</Navbar.Brand> */}
-                    <Navbar.Brand className="" href="/"> <img src="./images/bhavesh.png" alt="" /></Navbar.Brand>
+                    <Navbar.Brand href="/"> <img className="sm:w-1/6 sm:h-1/6 md:w-48 lg:w-40" src="./images/bhavesh.png" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto active text-dark sm:text-1xl font-bold md:text-2xl">
