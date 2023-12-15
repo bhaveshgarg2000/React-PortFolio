@@ -9,10 +9,11 @@ const TechStack = () => {
         <>
             <div className="flex flex-col justify-center items-center pt-3 ">
                 <h2 className="sm:text-xs md:text-6xl text-dark font-bold">My Tech Stack</h2>
-                <p className="font-italic md:text-xl">Technologies I`ve been working with</p>
-                <div className="flex flex-row px-8 space-x-10 pt-5">
+                <p className="font-italic md:text-xl mt-3">Technologies I`ve been working with</p>
+                <div className="flex flex-row px-8 space-x-10 pt-3 ">
+                
                     {/* HTML */}
-                    <div className="flex flex-col items-center xl">
+                    <div className="flex flex-col items-center xl ">
                         <Tooltip
                             content="HTML 5"
                             animate={{
