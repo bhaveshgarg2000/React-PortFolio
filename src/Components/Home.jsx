@@ -14,11 +14,11 @@ const Home = () => {
                 />
             </div> */}
 
-            <div className="container flex justify-center items-center py-12">
+            <div className="container flex justify-center items-center py-12 ">
                 <div className="md:w-full sm:w-11/12">
                     <div className="flex flex-col md:flex-row items-center ">
-                        <div className="md:w-1/2 sm:w-full text-center py-6 ">
-                            <h3 className="name1 italic text-justify break-all sm:text-xl md:text-2xl ">
+                        <div className="md:w-1/2 sm:w-full text-center">
+                            <h3 className="name1 italic text-justify break-all sm:text-xl md:text-2xl">
                                 Hi 👋,
                                 <br />
                                 My name is
@@ -29,7 +29,9 @@ const Home = () => {
                             </h3>
                         </div>
                         <div className="md:w-1/2 sm:w-64 md:ml-20 ">
-                            <img className="md:h-96 md:w-64 border-8 rounded-br-full md:rounded-bl-full rounded-tl-full border-neutral-600 border-double "
+                            <img className="md:h-96 md:w-64 border-4 rounded-br-full md:rounded-bl-full rounded-tl-full
+                                border-red-500 border-double ring-4 ring-transparent
+                                ring-emerald-200 ring-offset-4 ring-offset-lime-50"
                                 src="https://firebasestorage.googleapis.com/v0/b/garg-picsgram-152c5.appspot.com/o/IMG_7176.jpeg?alt=media&token=cc28dcd6-2fb6-4658-8f2b-b892530791ce"
                                 alt="Bhavesh Krishan Garg" />
                         </div>

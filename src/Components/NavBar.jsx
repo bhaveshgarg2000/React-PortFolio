@@ -8,7 +8,7 @@ const NavBar = () => {
         <>
             <Navbar expand="lg" className="">
                 <Container>
-                    <Navbar.Brand href="/"> <img className="sm:w-3/6 sm:h-6/6 md:w-48 lg:w-48" src="./images/bhavesh.png" alt="" /></Navbar.Brand>
+                    <Navbar.Brand href="/"> <img className="sm:w-2/6 sm:h-1/6 md:w-48 lg:w-48" src="./images/bhavesh.png" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto active text-dark sm:text-1xl font-bold md:text-2xl">
