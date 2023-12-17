@@ -7,7 +7,7 @@ const Project = () => {
     const projectDetails = [
         {
             title: "PicsGram",
-            description: "Capture and cherish life's moments with PicsGram – your go-to for memories that last a lifetime. Share, store, and relive the magic through captivating images on our platform",
+            description: "Capture and relive life's magic with PicsGram – your go-to for lasting memories.",
             githubUrl: "https://github.com/bhaveshgarg2000/PicsGram",
             liveUrl: "https://pics-gram.vercel.app/",
             imageUrl: "https://firebasestorage.googleapis.com/v0/b/garg-picsgram-152c5.appspot.com/o/IMG_6969.jpeg?alt=media&token=90aba91e-788a-4565-8788-ed996d9c8212",
@@ -15,7 +15,7 @@ const Project = () => {
         },
         {
             title: "Tic Tac Toe",
-            description: "Delight in strategic clashes on the timeless Tic Tac Toe grid. Each move shapes a battlefield of wits, offering challenge and skill. Triumph against friends or the computer in this classic game that transcends generations",
+            description: "Delight in strategic clashes on the timeless Tic Tac Toe grid, triumph against friends or computer in this classic game of wits.",
             githubUrl: "https://github.com/bhaveshgarg2000/Tic-Tac-Toe",
             liveUrl: "https://tic-tac-toe-bhavesh.netlify.app/",
             imageUrl: "https://w0.peakpx.com/wallpaper/353/837/HD-wallpaper-tic-tac-toe-games-letters-3d-and-cg-strategy-abstract-other.jpg",
@@ -23,7 +23,7 @@ const Project = () => {
         },
         {
             title: "Calculator ",
-            description: "Sleek and intuitive, our morphic-designed calculator ensures seamless calculations with a modern touch, combining style and functionality in a compact interface",
+            description: "Sleek and intuitive, our morphic-designed calculator ensures seamless calculations with a modern touch",
             githubUrl: "https://github.com/bhaveshgarg2000/Calculator",
             liveUrl: "https://bhaveshgarg2000.github.io/Calculator/ ",
             imageUrl: "https://img.freepik.com/premium-photo/3d-style-calculator-icon-isolated-white-background-finance-concept-generative-ai_159242-25909.jpg",
@@ -31,7 +31,7 @@ const Project = () => {
         },
         {
             title: "PortFolio",
-            description: "My portfolio is a visual journey through my diverse skills, highlighting my passion for design and innovation across graphic design and web development.",
+            description: "My portfolio: highlighting skills and passion in graphic design and web development.",
             githubUrl: "https://github.com/bhaveshgarg2000/PORTFOLIO-BKG",
             liveUrl: "https://bhaveshgarg2000.github.io/PORTFOLIO-BKG/",
             imageUrl: "https://images.pexels.com/photos/14936124/pexels-photo-14936124.jpeg?cs=srgb&dl=pexels-ann-h-14936124.jpg&fm=jpg",
@@ -39,7 +39,7 @@ const Project = () => {
         },
         {
             title: "RentRax",
-            description: "Rentrax is a game-changer in sports equipment rental. Our startup offers daily access to high-quality gear, providing a seamless experience for enthusiasts seeking top-notch equipment for their activities.",
+            description: "Rentrax revolutionizes sports equipment rental, offering daily access to premium gear for enthusiasts, ensuring top-notch experience.",
             githubUrl: "https://github.com/bhaveshgarg2000/ENT-WEB",
             liveUrl: "https://bhaveshgarg2000.github.io/ENT-WEB/",
             imageUrl: "https://rentrax.com/wp-content/uploads/2020/08/cropped-RENTRAX-Logo-HR.png",
@@ -51,10 +51,13 @@ const Project = () => {
 
     return (
         <div className="container pt-[96px] mx-auto flex justify-center items-center text-center">
-            <div className="row flex justify-center items-center">
+            <div className="row flex justify-center items-center ">
                 {projectDetails.map((project, index) => (
-                    <div key={index} className="col-md-4 col-sm-12 sm:flex sm:justify-center sm:items-center mb-4">
-                        <div className="w-80 h-96 sm:h-110 sm:w-80 bg-white rounded-lg shadow rounded-tl-[24px] rounded-tr-[24px] rounded-br-[24px] rounded-bl-[24px]">
+                    <div key={index} className="col-md-4 col-sm-12 sm:flex sm:justify-center sm:items-center md:items-baseline mb-4">
+                        <div className="w-80 h-96 sm:h-110 sm:w-80 bg-white rounded-lg rounded-tl-[24px] rounded-tr-[24px] rounded-br-[24px] 
+                        rounded-bl-[24px] bg-blend-screen md:drop-shadow-2xl md:text-sm  sm:shadow-sm md:shadow-2xl 
+                        sm:shadow-black md:shadow-black mix-blend-dark transition ease-in-out
+                        hover:-translate-y-0 hover:scale-110 duration-7 delay-400 cursor-pointer">
                             <div>
                                 <Tooltip
                                     content={project.title}
@@ -64,13 +67,13 @@ const Project = () => {
                                     }}
                                 >
                                     <img
-                                        className="w-80 h-44 rounded-tl-[20px] rounded-tr-[20px]"
+                                        className="w-80 h-44 rounded-tl-[20px] rounded-tr-[20px] hover:opacity-75 "
                                         src={project.imageUrl}
                                         alt=""
                                     />
                                 </Tooltip>
                             </div>
-                            <p className="Title italic flex items-center justify-center md:text-2xl sm:text-xl text-dark">
+                            <p className="Title italic flex items-center justify-center md:text-2xl sm:text-xl text-dark drop-shadow-md md:drop-shadow-x pt-1 ">
                                 {project.title}
                             </p>
                             <p className="Description italic text-sm text-center normal-case whitespace-normal">
