@@ -1,239 +1,112 @@
-// import MiddleFill from './MiddleFill';
 const About = () => {
+    const WorkExp = [
+        {
+            title: "Backend Web Developer",
+            jobType: "Internship",
+            location: "Faridabad",
+            time: "Apr-Jun 2023",
+            organisation: "Arctic Innovage"
+        },
+        {
+            title: "Backend Web Developer",
+            jobType: "Internship",
+            location: "Delhi",
+            time: "July-Nov 2022",
+            organisation: "CRIS"
+        },
+    ];
+    const Education = [
+        {
+            title: "Backend Web Developer",
+            EducationType: "B.Tech",
+            location: "Faridabad",
+            time: "Sept 2020 - Aug 2024",
+            organisation: "MRU"
+        },
+    ];
+
     return (
-        <div>
-            <div className="flex justify-center 
-                            indent-2 sm:text-xs md:text-6xl text-dark font-bold pb-4 pt-4">
+        <>
+            {/* ABOUT */}
+            <div className="select-none flex justify-center items-center text-3xl md:text-3xl text-dark font-bold pt-2">
                 About
             </div>
-            <div className="flex sm:justify-center md:justify-center sm:space-x-14 font-italic">
-                <p className=" flex ">
-                    I`m currently pursuing a Bachelors of Technology at Manav Rachna University.
-                    As a Full-Stack Developer, he is skilled in HTML, CSS, JavaScript, Node.js, React, Express.js, MongoDB, and more.
-                    Passionate about web development, Bhavesh has hands-on experience in creating dynamic and responsive applications.
-                    Eager to blend academic knowledge with practical coding expertise for impactful solutions, he invites you to innovate and learn together!
-                </p>
-            </div>
-            <div className="flex justify-center 
-                            indent-2 sm:text-xs md:text-6xl text-dark font-bold  pb-4 pt-2">
+            <p className="pt-1 flex sm:text-xl md:text-2xl normal-case text-dark tracking-wide text-left text-dark px-8 select-none">
+                I`m currently pursuing a Bachelors of Technology at Manav Rachna University.
+                As a Full-Stack Developer, he is skilled in HTML, CSS, JavaScript, Node.js, React, Express.js, MongoDB, and more.
+                Passionate about web development, Bhavesh has hands-on experience in creating dynamic and responsive applications.
+                Eager to blend academic knowledge with practical coding expertise for impactful solutions, he invites you to innovate and learn together!
+            </p>
+
+            {/* Work Exp */}
+            <div className="select-none flex justify-center items-center text-3xl md:text-3xl text-dark font-bold pt-2 ">
                 Work Experience
+            </div>
+            {WorkExp.map((experience, index) => (
+                <div key={index} className="text-dark pt-1 px-4  rounded-lg shadow-md mx-auto sm:mx-auto md:text-xl sm:text-xs select-none">
+                    <div className="flex items-center justify-between">
+                        <div className="flex flex-col pl-2">
+                            <h2 className="md:text-2xl sm:text-xl font-semibold mb-2 select-none px-2">{experience.title}</h2>
+                            <div className="flex items-center space-x-1 ">
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                </svg>
+                                <span className="select-none">{experience.jobType}</span>
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 9l6 6 6-6"></path>
+                                </svg>
+                                <span className="select-none">{experience.location}</span>
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                                <span className="select-none ">{experience.time}</span>
+                                <div className="flex items-center space-x-1 ">
+                                    <svg className="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM13 12h-2v2h2v-2zm0-6h-2v4h2V6z"></path>
+                                    </svg>
+                                    <span className="text-dark">{experience.organisation}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))}
 
-            </div>
-            <div className="w-[704px] h-[75px]">
-                <div className="relative w-[755px] h-[78px] top-[-3px]">
-                    <div className="absolute w-[696px] h-[78px] top-0 left-0">
-                        <img
-                            className="top-[38px] left-[242px] absolute w-[16px] h-[12px]"
-                            alt="Carbon location"
-                            src="carbon-location.svg"
-                        />
-                        <div
-                            className="!h-[24px] !absolute !left-[612px] !bg-button-success !w-[84px] !top-0"
-                        // signUpClassName="!text-button-text !tracking-[0] !text-[9px] ![font-style:unset] !font-semibold ![font-family:'Poppins-SemiBold',Helvetica] !leading-[26px] !top-[-2px]"
-                        // text="Full Time"
-                        >Full Time</div>
-                        <div className="absolute w-[627px] h-[28px] top-[3px] left-0">
-                            <div className="relative w-[629px] h-[28px]">
-                                <div className="w-[627px] [font-family:'Poppins-Regular',Helvetica] font-normal text-dark-content text-[20px] tracking-[1.00px] absolute top-0 left-0 leading-[28px]">
-                                    Junior Web Developer
-                                </div>
-                            </div>
-                        </div>
-                        <div className="absolute w-[269px] h-[17px] top-[35px] left-[20px]">
-                            <div className="relative w-[271px] h-[17px]">
-                                <p className="w-[269px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                    <span className="tracking-[1.00px]">Dr. Rajkumar’s Learning Ap</span>
-                                    <span className="tracking-[0]">p</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="w-[100px] top-[35px] left-[263px] absolute h-[17px]">
-                            <div className="relative w-[102px] h-[17px]">
-                                <div className="w-[100px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] tracking-[1.00px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                    Bengaluru
-                                </div>
-                            </div>
-                        </div>
-                        <div className="absolute w-[2px] h-[696px] top-[-271px] left-[347px] bg-colors-grey -rotate-90" />
-                    </div>
-                    <img
-                        className="absolute w-[16px] h-[12px] top-[38px] left-0"
-                        alt="Mdi office building"
-                        src="mdi-office-building.svg"
-                    />
-                    <img className="top-[39px] left-[539px] absolute w-[16px] h-[12px]" alt="Carbon location" src="image.svg" />
-                    <div className="w-[195px] top-[36px] left-[560px] absolute h-[17px]">
-                        <div className="relative w-[197px] h-[17px]">
-                            <p className="w-[195px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] tracking-[1.00px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                Sep 2021 - Dec 2021
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="w-[704px] h-[75px]">
-                <div className="relative w-[755px] h-[78px] top-[-3px]">
-                    <div className="absolute w-[696px] h-[78px] top-0 left-0">
-                        <img
-                            className="top-[38px] left-[242px] absolute w-[16px] h-[12px]"
-                            alt="Carbon location"
-                            src="carbon-location.svg"
-                        />
-                        <div
-                            className="!h-[24px] !absolute !left-[612px] !bg-button-success !w-[84px] !top-0"
-                        // signUpClassName="!text-button-text !tracking-[0] !text-[9px] ![font-style:unset] !font-semibold ![font-family:'Poppins-SemiBold',Helvetica] !leading-[26px] !top-[-2px]"
-                        // text="Full Time"
-                        >Full Time</div>
-                        <div className="absolute w-[627px] h-[28px] top-[3px] left-0">
-                            <div className="relative w-[629px] h-[28px]">
-                                <div className="w-[627px] [font-family:'Poppins-Regular',Helvetica] font-normal text-dark-content text-[20px] tracking-[1.00px] absolute top-0 left-0 leading-[28px]">
-                                    Junior Web Developer
-                                </div>
-                            </div>
-                        </div>
-                        <div className="absolute w-[269px] h-[17px] top-[35px] left-[20px]">
-                            <div className="relative w-[271px] h-[17px]">
-                                <p className="w-[269px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                    <span className="tracking-[1.00px]">Dr. Rajkumar’s Learning Ap</span>
-                                    <span className="tracking-[0]">p</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="w-[100px] top-[35px] left-[263px] absolute h-[17px]">
-                            <div className="relative w-[102px] h-[17px]">
-                                <div className="w-[100px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] tracking-[1.00px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                    Bengaluru
-                                </div>
-                            </div>
-                        </div>
-                        <div className="absolute w-[2px] h-[696px] top-[-271px] left-[347px] bg-colors-grey -rotate-90" />
-                    </div>
-                    <img
-                        className="absolute w-[16px] h-[12px] top-[38px] left-0"
-                        alt="Mdi office building"
-                        src="mdi-office-building.svg"
-                    />
-                    <img className="top-[39px] left-[539px] absolute w-[16px] h-[12px]" alt="Carbon location" src="image.svg" />
-                    <div className="w-[195px] top-[36px] left-[560px] absolute h-[17px]">
-                        <div className="relative w-[197px] h-[17px]">
-                            <p className="w-[195px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] tracking-[1.00px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                Sep 2021 - Dec 2021
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="w-[704px] h-[75px]">
-                <div className="relative w-[755px] h-[78px] top-[-3px]">
-                    <div className="absolute w-[696px] h-[78px] top-0 left-0">
-                        <img
-                            className="top-[38px] left-[242px] absolute w-[16px] h-[12px]"
-                            alt="Carbon location"
-                            src="carbon-location.svg"
-                        />
-                        <div
-                            className="!h-[24px] !absolute !left-[612px] !bg-button-success !w-[84px] !top-0"
-                        // signUpClassName="!text-button-text !tracking-[0] !text-[9px] ![font-style:unset] !font-semibold ![font-family:'Poppins-SemiBold',Helvetica] !leading-[26px] !top-[-2px]"
-                        // text="Full Time"
-                        >Full Time</div>
-                        <div className="absolute w-[627px] h-[28px] top-[3px] left-0">
-                            <div className="relative w-[629px] h-[28px]">
-                                <div className="w-[627px] [font-family:'Poppins-Regular',Helvetica] font-normal text-dark-content text-[20px] tracking-[1.00px] absolute top-0 left-0 leading-[28px]">
-                                    Junior Web Developer
-                                </div>
-                            </div>
-                        </div>
-                        <div className="absolute w-[269px] h-[17px] top-[35px] left-[20px]">
-                            <div className="relative w-[271px] h-[17px]">
-                                <p className="w-[269px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                    <span className="tracking-[1.00px]">Dr. Rajkumar’s Learning Ap</span>
-                                    <span className="tracking-[0]">p</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="w-[100px] top-[35px] left-[263px] absolute h-[17px]">
-                            <div className="relative w-[102px] h-[17px]">
-                                <div className="w-[100px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] tracking-[1.00px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                    Bengaluru
-                                </div>
-                            </div>
-                        </div>
-                        <div className="absolute w-[2px] h-[696px] top-[-271px] left-[347px] bg-colors-grey -rotate-90" />
-                    </div>
-                    <img
-                        className="absolute w-[16px] h-[12px] top-[38px] left-0"
-                        alt="Mdi office building"
-                        src="mdi-office-building.svg"
-                    />
-                    <img className="top-[39px] left-[539px] absolute w-[16px] h-[12px]" alt="Carbon location" src="image.svg" />
-                    <div className="w-[195px] top-[36px] left-[560px] absolute h-[17px]">
-                        <div className="relative w-[197px] h-[17px]">
-                            <p className="w-[195px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] tracking-[1.00px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                Sep 2021 - Dec 2021
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="flex justify-center 
-                            indent-2 sm:text-xs md:text-6xl text-dark font-bold  pb-4 pt-2">
+            {/* EDUCATION */}
+            <div className="select-none flex justify-center items-center text-3xl md:text-3xl text-dark font-bold pt-2">
                 Education
-
             </div>
-            <div className="w-[704px] h-[75px]">
-                <div className="relative w-[755px] h-[78px] top-[-3px]">
-                    <div className="absolute w-[696px] h-[78px] top-0 left-0">
-                        <img
-                            className="top-[38px] left-[242px] absolute w-[16px] h-[12px]"
-                            alt="Carbon location"
-                            src="carbon-location.svg"
-                        />
-                        <div
-                            className="!h-[24px] !absolute !left-[612px] !bg-button-success !w-[84px] !top-0"
-                        // signUpClassName="!text-button-text !tracking-[0] !text-[9px] ![font-style:unset] !font-semibold ![font-family:'Poppins-SemiBold',Helvetica] !leading-[26px] !top-[-2px]"
-                        // text="Full Time"
-                        >Full Time</div>
-                        <div className="absolute w-[627px] h-[28px] top-[3px] left-0">
-                            <div className="relative w-[629px] h-[28px]">
-                                <div className="w-[627px] [font-family:'Poppins-Regular',Helvetica] font-normal text-dark-content text-[20px] tracking-[1.00px] absolute top-0 left-0 leading-[28px]">
-                                    Junior Web Developer
+            {Education.map((education, index) => (
+                <div key={index} className="text-dark pt-2 rounded-lg shadow-md mx-auto sm:mx-auto md:text-xl sm:text-xs select-none px-4">
+                    <div className="flex items-center justify-between">
+                        <div className="flex flex-col pl-2">
+                            <h2 className="md:text-2xl sm:text-xl font-semibold mb-2 select-none px-2">{education.title}</h2>
+                            <div className="flex items-center space-x-1 ">
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                </svg>
+                                <span className="select-none text-xl">{education.EducationType}</span>
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 9l6 6 6-6"></path>
+                                </svg>
+                                <span className="select-none text-xl">{education.location}</span>
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                                <span className="select-none text-xl">{education.time}</span>
+                                <div className="flex items-center space-x-1 ">
+                                    <svg className="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM13 12h-2v2h2v-2zm0-6h-2v4h2V6z"></path>
+                                    </svg>
+                                    <span className="text-dark">{education.organisation}</span>
                                 </div>
                             </div>
-                        </div>
-                        <div className="absolute w-[269px] h-[17px] top-[35px] left-[20px]">
-                            <div className="relative w-[271px] h-[17px]">
-                                <p className="w-[269px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                    <span className="tracking-[1.00px]">Dr. Rajkumar’s Learning Ap</span>
-                                    <span className="tracking-[0]">p</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="w-[100px] top-[35px] left-[263px] absolute h-[17px]">
-                            <div className="relative w-[102px] h-[17px]">
-                                <div className="w-[100px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] tracking-[1.00px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                    Bengaluru
-                                </div>
-                            </div>
-                        </div>
-                        <div className="absolute w-[2px] h-[696px] top-[-271px] left-[347px] bg-colors-grey -rotate-90" />
-                    </div>
-                    <img
-                        className="absolute w-[16px] h-[12px] top-[38px] left-0"
-                        alt="Mdi office building"
-                        src="mdi-office-building.svg"
-                    />
-                    <img className="top-[39px] left-[539px] absolute w-[16px] h-[12px]" alt="Carbon location" src="image.svg" />
-                    <div className="w-[195px] top-[36px] left-[560px] absolute h-[17px]">
-                        <div className="relative w-[197px] h-[17px]">
-                            <p className="w-[195px] [font-family:'Poppins-Medium',Helvetica] font-medium text-light-content text-[12px] tracking-[1.00px] whitespace-nowrap absolute top-0 left-0 leading-[28px]">
-                                Sep 2021 - Dec 2021
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            ))}
+        </>
     )
 }
 
-export default About
+export default About;

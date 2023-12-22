@@ -6,12 +6,76 @@ import { FaGolang } from "react-icons/fa6";
 import { Tooltip } from "@material-tailwind/react";
 const TechStack = () => {
     return (
+        // const Stack = [
+        //     {
+        //         title: "HTML 5",
+        //         icon: <FaHtml5 />,
+        //         size: "6em",
+        //     },
+        //     {
+        //         title: "CSS 3",
+        //         icon: <FaCss3 />,
+        //         size: "6em",
+        //     },
+        //     {
+        //         title: "JavaScript",
+        //         icon: <IoLogoJavascript />,
+        //         size: "6em",
+        //     },
+        //     {
+        //         title: "MySQL",
+        //         icon: <SiMysql />,
+        //         size: "6em",
+        //     },
+        //     {
+        //         title: "TailWind",
+        //         icon: <SiTailwindcss />,
+        //         size: "6em",
+
+        //     },
+        //     {
+        //         title: "VsCode",
+        //         icon: <TbBrandVscode />,
+        //         size: "6em",
+
+        //     },
+        //     {
+        //         title: "MongoDB",
+        //         icon: <SiMongodb />,
+        //         size: "6em",
+        //     },
+        //     {
+        //         title: "ExpreeeJs",
+        //         icon: <SiExpress />,
+        //         size: "6em",
+        //     },
+        //     {
+        //         title: "ReactJs",
+        //         icon: <FaReact />,
+        //         size: "6em",
+        //     },
+        //     {
+        //         title: "NodeJs",
+        //         icon: <FaNodeJs />,
+        //         size: "6em"
+
+        //     },
+        //     {
+        //         title: "GitHub",
+        //         icon: <FaGitHub />,
+        //         size: "6em"
+        //     },
+        //     {
+        //         title: "Go",
+        //         icon: <FaGolang />,
+        //         size: "6em",
+        //     },
+        // ];
         <>
             <div className="flex flex-col justify-center items-center pt-3 ">
                 <h2 className="sm:text-xs md:text-6xl text-dark font-bold">My Tech Stack</h2>
                 <p className="font-italic md:text-xl mt-3">Technologies I`ve been working with</p>
                 <div className="flex flex-row px-8 space-x-10 pt-3 ">
-                
                     {/* HTML */}
                     <div className="flex flex-col items-center xl ">
                         <Tooltip
@@ -26,6 +90,7 @@ const TechStack = () => {
                         </Tooltip>
                         <span className="pt-2 text-black text-2xl font-bold italic hover:tracking-wider">HTML 5</span>
                     </div>
+
                     {/* CSS */}
                     <div className="flex flex-col items-center xl" >
                         <Tooltip
@@ -75,7 +140,6 @@ const TechStack = () => {
                         </Tooltip>
                     </div>
                     {/* TailWind */}
-
                     <div className="flex flex-col items-center xl" >
                         <Tooltip content="TailWind"
                             animate={{

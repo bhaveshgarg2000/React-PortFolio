@@ -1,9 +1,7 @@
 import { FaGithub, FaCode } from "react-icons/fa";
 import { Tooltip } from "@material-tailwind/react";
-
 const Project = () => {
     const shouldOpenInNewTab = true;
-
     const projectDetails = [
         {
             title: "PicsGram",
@@ -34,7 +32,7 @@ const Project = () => {
             description: "My portfolio: highlighting skills and passion in graphic design and web development.",
             githubUrl: "https://github.com/bhaveshgarg2000/PORTFOLIO-BKG",
             liveUrl: "https://bhaveshgarg2000.github.io/PORTFOLIO-BKG/",
-            imageUrl: "https://images.pexels.com/photos/14936124/pexels-photo-14936124.jpeg?cs=srgb&dl=pexels-ann-h-14936124.jpg&fm=jpg",
+            imageUrl: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvfGVufDB8fDB8fHww",
             techStack: "HTML,CSS,vanilla Js, Bootstrap",
         },
         {
@@ -45,15 +43,21 @@ const Project = () => {
             imageUrl: "https://rentrax.com/wp-content/uploads/2020/08/cropped-RENTRAX-Logo-HR.png",
             techStack: "HTML,CSS,vanilla Js, Bootstrap",
         },
-
-        // Add more project details as needed
+        {
+            title: "CRUD Operation",
+            description: "Rentrax revolutionizes sports equipment rental, offering daily access to premium gear for enthusiasts, ensuring top-notch experience.",
+            githubUrl: "https://github.com/bhaveshgarg2000/MongoDB-NodeJs-Driver-Crud.git",
+            liveUrl: "https://github.com/bhaveshgarg2000/MongoDB-NodeJs-Driver-Crud.git",
+            imageUrl: "https://www.clicdata.com/wp-content/uploads/2023/02/mongodb-logo.jpg",
+            techStack: "MongoDB,Mongoose,Express.Js,DotEnv",
+        },
     ];
 
     return (
-        <div className="container pt-[96px] mx-auto flex justify-center items-center text-center">
-            <div className="row flex justify-center items-center ">
+        <div className="container pt-[12px] mx-auto sm:mx-auto flex justify-center items-center text-center ">
+            <div className="row flex justify-center items-center flex-wrap  ">
                 {projectDetails.map((project, index) => (
-                    <div key={index} className="col-md-4 col-sm-12 sm:flex sm:justify-center sm:items-center md:items-baseline mb-4">
+                    <div key={index} className="col-md-4 col-sm-12 sm:flex sm:justify-center sm:items-center md:items-baseline mb-[24px]">
                         <div className="w-80 h-96 sm:h-110 sm:w-80 bg-white rounded-lg rounded-tl-[24px] rounded-tr-[24px] rounded-br-[24px] 
                         rounded-bl-[24px] bg-blend-screen md:drop-shadow-2xl md:text-sm  sm:shadow-sm md:shadow-2xl 
                         sm:shadow-black md:shadow-black mix-blend-dark transition ease-in-out
@@ -64,13 +68,11 @@ const Project = () => {
                                     animate={{
                                         mount: { scale: 1, y: 0 },
                                         unmount: { scale: 0, y: 25 },
-                                    }}
-                                >
+                                    }}>
                                     <img
                                         className="w-80 h-44 rounded-tl-[20px] rounded-tr-[20px] hover:opacity-75 "
                                         src={project.imageUrl}
-                                        alt=""
-                                    />
+                                        alt="Project Image" />
                                 </Tooltip>
                             </div>
                             <p className="Title italic flex items-center justify-center md:text-2xl sm:text-xl text-dark drop-shadow-md md:drop-shadow-x pt-1 ">
@@ -88,15 +90,13 @@ const Project = () => {
                                     animate={{
                                         mount: { scale: 1, y: 0 },
                                         unmount: { scale: 0, y: 25 },
-                                    }}
-                                >
+                                    }}>
                                     <a
                                         className="btn btn-primary btn-floating m-1"
                                         style={{ backgroundColor: "#333333" }}
                                         href={project.githubUrl}
                                         target={shouldOpenInNewTab ? "_blank" : undefined}
-                                        rel={shouldOpenInNewTab ? "noopener noreferrer" : undefined}
-                                    >
+                                        rel={shouldOpenInNewTab ? "noopener noreferrer" : undefined}>
                                         <FaGithub />
                                     </a>
                                 </Tooltip>
@@ -105,14 +105,12 @@ const Project = () => {
                                     animate={{
                                         mount: { scale: 1, y: 0 },
                                         unmount: { scale: 0, y: 25 },
-                                    }}
-                                >
+                                    }}>
                                     <a
                                         className="btn btn-primary btn-floating m-1 bg-dark"
                                         href={project.liveUrl}
                                         target={shouldOpenInNewTab ? "_blank" : undefined}
-                                        rel={shouldOpenInNewTab ? "noopener noreferrer" : undefined}
-                                    >
+                                        rel={shouldOpenInNewTab ? "noopener noreferrer" : undefined}>
                                         <FaCode />
                                     </a>
                                 </Tooltip>
