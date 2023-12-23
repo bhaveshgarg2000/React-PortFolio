@@ -22,7 +22,7 @@ const AppBar = () => {
     return (
         <>
             <div className="h-screen bg-white dark:bg-black flex justify-center items-center">
-                <button className="bg-green-200 p-4 rounded-2xl" onClick={handleThemeSwitch}>SUBMIT</button>
+                <button className="bg-dark p-4 rounded-2xl" onClick={handleThemeSwitch}>SUBMIT</button>
             </div>
         </>
     )
