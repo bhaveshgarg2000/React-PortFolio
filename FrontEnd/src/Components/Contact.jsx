@@ -43,16 +43,16 @@ const Contact = () => {
     });
     console.log(errors)
     return (
-        <div className="formo pt-10 sm:flex">
-            <h1 className="text-6xl ">Contact US</h1>
+        <div className="formo  sm:flex">
+            <h1 className="pt-10 text-3xl md:text-6xl ">Contact Me</h1>
             <div className="flex flex-col justify-center items-center formo ">
                 <form
-                    className="w-80 flex flex-col md:w-100"
+                    className="w-80 flex flex-col md:w-100 space-y-1"
                     onSubmit={handleSubmit}
                 >
-                    <label htmlFor="name" className="pt-2 text-2xl md:text-3xl" >Name : </label>
+                    <label htmlFor="name" className="pt-1 text-xl md:text-2xl" >Name : </label>
                     <input
-                        className=" pt-2 text-2xl md:text-3xl none-underline border-none outline-none"
+                        className=" pt-1 text-sm md:text-xl none-underline border-none outline-none"
                         autoComplete="off"
                         type="text"
                         placeholder="Name"
@@ -64,12 +64,11 @@ const Contact = () => {
                     />
                     {errors.name && touched.name ? (<p>{
                         errors.name}</p>) : null}
-                    {/* <br /> */}
                     <label htmlFor='email'
-                        className="pt-2 text-2xl md:text-3xl"
+                        className="pt-2  text-xl md:text-2xl"
                     >Email : </label>
                     <input
-                        className="pt-2 text-2xl md:text-3xl none-underline border-none outline-none"
+                        className="pt-2 text-sm md:text-xl none-underline border-none outline-none"
                         autoComplete="off"
                         type="email"
                         name="email"
@@ -86,10 +85,10 @@ const Contact = () => {
                     {/* <br /> */}
 
                     <label
-                        className="pt-2 text-2xl md:text-3xl"
+                        className="pt-2  text-xl md:text-2xl"
                         htmlFor='message'>Message :  </label>
                     <input
-                        className="pt-2 text-2xl md:text-3xl none-underline border-none outline-none"
+                        className="pt-2  text-sm md:text-xl none-underline border-none outline-none"
                         autoComplete="off"
                         type="text"
                         name="message"
@@ -101,14 +100,14 @@ const Contact = () => {
                         maxLength={500}
 
                     />
-                    {errors.confirm && touched.confirm ? (<p>{
-                        errors.confirm}</p>) : null}
+                    {errors.message && touched.message ? (<p>{
+                        errors.message}</p>) : null}
                     <br />
                     <button
                         className="md:rounded-lg bg-dark text-white p-2 rounded-sm outline outline-offset-4 
                         outline-2 outline-lime-600 hover:text-dark hover:bg-green-200 text-xl md:text-2xl"
                         type='submit'>
-                        Register
+                        Submit
                     </button>
                     <ToastContainer />
                 </form>

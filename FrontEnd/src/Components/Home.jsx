@@ -6,10 +6,11 @@ const Home = () => {
                 <div className="md:w-full sm:w-11/12">
                     <div className="flex flex-col md:flex-row items-center ">
                         <div className="md:w-1/2 sm:w-full text-center">
+                            <h3 className='text-left text-bold italic text-3xl md:text-5xl text-violet-900'>
+                                Bhavesh Krishan Garg
+                            </h3>
                             <p className="italic text-justify sm:text-xl md:text-2xl text-wrap">
-                                <h3 className='text-bold italic sm:text-2xl md:text-5xl text-violet-900'>
-                                    Bhavesh Krishan Garg
-                                </h3>Full Stack Developer adept at creating dynamic web applications.
+                                Full Stack Developer adept at creating dynamic web applications.
                                 My skills span front-End technologies like HTML, CSS, and JavaScript,React.Js coupled
                                 with proficiency in Back-End frameworks such as Node.js and Express.Js.
                                 Explore my portfolio for a glimpse into my passion for crafting seamless digital

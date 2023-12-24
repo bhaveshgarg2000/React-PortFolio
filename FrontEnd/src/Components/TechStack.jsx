@@ -63,7 +63,7 @@ const TechStack = () => {
             <p className="font-italic sm:text-sm md:text-xl pt-3">Technologies I`ve been working with</p>
             <div className="flex flex-wrap justify-center">
                 {Stack.map((stack, index) => (
-                    <div key={index} className="pt-2 w-full sm:w-1/2 md:w-1/5 lg:w-1/5 px-1 mt-4">
+                    <div key={index} className="pt-2 w-full sm:w-1/4 md:w-1/5 lg:w-1/5 px-1 mt-4">
                         <Tooltip
                             content={stack.title}
                             animate={{
