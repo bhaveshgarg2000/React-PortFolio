@@ -1,7 +1,6 @@
 import './App.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Routes, Route } from 'react-router-dom'
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import NavBar from './Components/NavBar'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
@@ -14,7 +13,6 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <SpeedInsights />
 
         <Route path='/' element={<Home />} />
         <Route path="/about" element={<About />} />
